@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <style>
+  #class{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+     background-color: bisque;
+     font-display: flex;
+     align-items: center;
+     height: 50px;
+     width: 400px;
+  }
+ 
+
+
+    </style>
+</head>
+<body>
+ <h1 id="class">percentage calc</h1>
+ <div>
+ <form onsubmit="calc()" >
+     <!--total marks  -->
+    <label for="totalmarks">Total Marks</label>
+       <input type="text" id="tm" placeholder="enter your total marks">
+ </div>
+<!-- obtain marks -->
+<div><br>
+<label for="ObtaindMarks">Obtained Marks</label>
+       <input type="text" id="om" placeholder="enter your obtained marks">
+</div> <br>      
+       <button type="submit">calculate</button>
+ </form>
+
+
+<script>
+   function calc() {
+      
+        let totalMarksValue= document.querySelector("#tm").value;
+        let obtainMarksValue= document.querySelector("#om").value;
+        let result= obtainMarksValue /totalMarksValue * 100;
+        document.write("your marks percentage " + result + " %"); 
+
+   }
+
+
+
+</script>
+
+
+    
+</body>
+</html>
